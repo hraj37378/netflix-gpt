@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "netflixgpt-193ab"
-  }
+    "default": "netflixgpt-193ab",
+    "netflix-gpt": "netflixgpt-193ab"
+  },
+  "targets": {},
+  "etags": {}
 }

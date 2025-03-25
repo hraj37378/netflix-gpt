@@ -28,7 +28,7 @@ const Login = () => {
         email.current.value,
         password.current.value
       )
-        .then((userCredential) => {
+        .then((userCredential) => { 
           const user = userCredential.user;
           console.log(user);
         })
@@ -65,8 +65,8 @@ const Login = () => {
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="w-6/12 absolute p-10 bg-black my-40 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
-      >
+        className="w-3/12 absolute p-10 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
+      > 
         <h1 className="text-3xl font-bold py-4 mx-auto">
           {isSignIn ? "Sign In" : "Sign Up"}
         </h1>
@@ -97,10 +97,10 @@ const Login = () => {
           {isSignIn ? "Sign In" : "Sign Up"}
         </button>
         <span className="p-2 mx-auto text-gray-400">
-          {isSignIn ? "New to Netflix?" : "Already a member"}
+          {isSignIn ? "New to Netflix?" : "Already registered?"}
         </span>
         <span className="font-bold cursor-pointer" onClick={handleSignUp}>
-          {isSignIn ? "Sign up" : "Sign In"}
+          {isSignIn ? "Sign Up" : "Sign In"}
         </span>
       </form>
     </div>
