@@ -6,12 +6,14 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
+import { useDispatch } from "react-redux";
+import { NETFLIX_BACKGROUND } from "../utils/constants";
 const Login = () => {
   const [isSignIn, setSignIn] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
   const email = useRef(null);
   const password = useRef(null);
-
+  const name = useRef(null);
   const handleSignUp = () => {
     setSignIn(!isSignIn);
   };
@@ -30,7 +32,6 @@ const Login = () => {
       )
         .then((userCredential) => { 
           const user = userCredential.user;
-          console.log(user);
         })
         .catch((error) => {
           const errorMessage = error.message;
@@ -58,7 +59,7 @@ const Login = () => {
       <Header />
       <div className="absolute w-full h-screen">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/42a0bce6-fc59-4c1c-b335-7196a59ae9ab/web/IN-en-20250303-TRIFECTA-perspective_d5f81427-d6cf-412d-8e86-2315671b9be1_large.jpg"
+          src={NETFLIX_BACKGROUND}
           alt="background-image"
           className="w-full h-full"
         />
@@ -72,6 +73,7 @@ const Login = () => {
         </h1>
         {!isSignIn && (
           <input
+            ref={name}
             type="text"
             placeholder="Enter your name"
             className="my-2 mx-auto p-2 w-full rounded-lg bg-gray-800 border"
