@@ -11,3 +11,5 @@ export const API_OPTIONS = {
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3OWVlOWY2NmRhYzdlYjM0YTExZWFlOGYwYmEzMWEzMSIsIm5iZiI6MTc0Mjk4MjE4MC44NzgsInN1YiI6IjY3ZTNjYzI0MTZhM2M1YzIyNGYwYTdjNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.pHickcXTntyOQT5IvJ165shtv497lj1nCsrmPOuJuJY'
     }
   };
+
+  export const NOW_PLAYING_MOVIES = 'https://api.themoviedb.org/3/movie/now_playing?page=1';
