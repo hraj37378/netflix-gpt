@@ -13,3 +13,5 @@ export const API_OPTIONS = {
   };
 
   export const NOW_PLAYING_MOVIES = 'https://api.themoviedb.org/3/movie/now_playing?page=1';
+
+  export const IMAGE_CDN_URL = "https://image.tmdb.org/t/p/w300/";
