@@ -34,7 +34,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="absolute w-full px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
+    <div className="absolute w-full px-8 bg-gradient-to-b from-black z-10 flex justify-between">
       <img
         className="w-40"
         src={NETFLIX_LOGO}
@@ -43,11 +43,6 @@ const Header = () => {
 
       {user && (
         <div className="flex items-center">
-          <img
-            className="h-8 px-2"
-            alt="user-logo"
-            src={USER_LOGO}
-          />
           <button
             onClick={handleSignOut}
             className="px-2 bg-red-600 text-white h-8 rounded-lg hover:bg-red-700"
