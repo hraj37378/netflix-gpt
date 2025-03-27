@@ -17,3 +17,5 @@ export const API_OPTIONS = {
   export const TOP_RATED="https://api.themoviedb.org/3/movie/top_rated";
   export const UPCOMING_MOVIES="https://api.themoviedb.org/3/movie/upcoming";
   export const IMAGE_CDN_URL = "https://image.tmdb.org/t/p/w300/";
+
+  export const SUPPORTED_LANGUAGES = [{identifier: "en", language: "english"}, {identier: "hindi", language: "hindi"}, {identifier: "spanish", language: "spanish"}];
